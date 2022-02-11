@@ -17,10 +17,11 @@ function getCss(theme: string, fontSize: string) {
     let radial = 'lightgray';
 
     if (theme === 'dark') {
-        background = 'black';
-        foreground = 'white';
+        background = '#171717';
+        foreground = '#E5E5E5';
         radial = 'dimgray';
     }
+
     return `
     @font-face {
         font-family: 'Inter';
@@ -93,7 +94,7 @@ function getCss(theme: string, fontSize: string) {
         margin: 0 .05em 0 .1em;
         vertical-align: -0.1em;
     }
-    
+
     .heading {
         font-family: 'Inter', sans-serif;
         font-size: ${sanitizeHtml(fontSize)};

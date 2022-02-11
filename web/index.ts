@@ -91,7 +91,7 @@ interface FieldProps {
 const Field = ({ label, input }: FieldProps) => {
     return H('div',
         { className: 'field' },
-        H('label', 
+        H('label',
             H('div', {className: 'field-label'}, label),
             H('div', { className: 'field-value' }, input),
         ),
@@ -152,6 +152,8 @@ const imageDarkOptions: DropdownOption[] = [
     { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg' },
     { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg' },
     { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-bw-logo.svg' },
+    { text: 'Avatar', value: 'https://raw.githubusercontent.com/xxczaki/assets/main/3d.jpg' },
+    { text: 'Parsify', value: 'https://raw.githubusercontent.com/xxczaki/assets/main/parsify.svg' },
 ];
 
 const widthOptions = [
